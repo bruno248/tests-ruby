@@ -49,9 +49,11 @@ describe "#multiply" do
 
   it "multiplies two other numbers"
     # one other test here, don't forget do end ;)
+    expect(multiply(2, 5)).to eq(12)
 
   it "multiplies two other numbers, one of them being 0"
     # one last test, with 0 in it
+    expect(multiply(3, 0)).to eq(12)
 
 end
 
@@ -60,10 +62,10 @@ describe "#power" do
 end
 
 # http://en.wikipedia.org/wiki/Factorial
-describe "#factorial" do
+describe "#factorial" dogit 
   it "computes the factorial of 0"
   it "computes the factorial of 1"
   it "computes the factorial of 2"
-  it "computes the factorial of 5"
+  it "compugit putes the factorial of 5"
   it "computes the factorial of 10"
 end
