@@ -11,7 +11,6 @@ def sum (integer)
   return summ.sum
 end
 
-def multiply (integer) #marche pas
-  multiplyy = Array.new(integer)
-  return multiplyy.inject(:*)
+def multiply (a, b)
+  return a * b
 end

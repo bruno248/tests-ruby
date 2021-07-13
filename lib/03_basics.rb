@@ -1,18 +1,16 @@
 def who_is_bigger(a, b, c)
-  number = a, b, c
-  if a == "nil"
+  h = {"a" => a, "b" => b, "c" => c}
+  if a == nil
     return "nil detected"
-  elsif b == "nil"
+  elsif b == nil
     return "nil detected"
-  elsif c == "nil"
+  elsif c == nil
     return "nil detected"
   else 
-    number.max
+    return h.max_by{|v,i| i}[0] + " is bigger"
   end
 end
 
 def reverse_upcase_noLTA(string)
-  string.upcase
-  letter = Array.new (string)
-  letter.delete(l, t, a)
+  string.upcase.reverse.delete "LTA"
 end
